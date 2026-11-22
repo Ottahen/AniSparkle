@@ -1,0 +1,15 @@
+{
+  "name": "ani-sparkle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node server.mjs",
+    "check": "node --check src/config.js && node --check src/media-player.js && node --check src/provider-resolver.js && node --check src/app.js && node --check scripts/build.mjs && node --check server.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "hls.js": "1.7.3"
+  }
+}
